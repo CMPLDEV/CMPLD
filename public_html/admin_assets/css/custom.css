@@ -1,0 +1,64 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css";
+.hide-item{display: none !important;}
+body{background-color:#e1e1e1;}
+footer{display: none !important;}
+.navbar-brand-box{background-color: #bebebe;}
+.vertical-menu{background-color: #172124;}
+#sidebar-menu ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem;
+    color: #d0d0d1;
+    position: relative;
+    font-weight: 400;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    margin: 0px;
+    border-radius: 0px;
+    font-size: 13px;
+    font-family: Roboto, sans-serif;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;}
+#sidebar-menu ul li a .nav-icon {
+    color:#d0d0d1 !important;}
+#sidebar-menu ul li a:hover {
+    color: #d0d0d1;}
+.metismenu li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ffffff63;}
+#sidebar-menu ul li.mm-active > a { 
+    color: #172124;}
+#sidebar-menu ul li.mm-active > a .nav-icon {
+    color: #172124 !important;
+}
+.card-header{background-color: slategrey;
+    border-radius: 0 !important;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding: 7px 10px;}
+.card {
+    margin-bottom: 20px;
+    box-shadow: none;
+    border: none;
+}
+.card-footer{border-top:none;}
+.table > :not(caption) > * > * {
+    padding: 4px 10px;
+    font-size: 10px;}
+.bg-warning{background-color: #8b8b8b !important;
+    border-radius: 0;
+    padding: 2px 3px 5px 3px;}
+.icon {width: 15px !important;}
+#additional_row{display: none;}
+/* Important part */
+.modal-dialog{ overflow-y: initial !important;}
+.modal-body{ max-height: 80vh; overflow-y: auto;}
+.custom-spinner{width: 1rem !important; height: 1rem !important;}
+button.dropdown-toggle{border: 1px solid lightgrey;}
+button.dropdown-toggle:hover{border: 1px solid lightgrey;}

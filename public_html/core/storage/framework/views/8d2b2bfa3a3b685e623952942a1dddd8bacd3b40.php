@@ -1,0 +1,98 @@
+<?php if($slider->isNotEmpty()): ?>
+<?php $i = 1; ?>
+<div class="container-fluid">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner" 
+style="border-radius: 20px;margin-top: 10px;box-shadow: 0px 0px 5px 0px lightgrey;">
+<?php $__currentLoopData = $slider; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+<div class="carousel-item <?php if($i++ == 1): ?> active <?php endif; ?>">
+<a href="<?php echo e($row->link); ?>">    
+<img src="uploaded_files/slider/<?php echo e($row->image); ?>" class="d-block w-100" alt="<?php echo e($row->title); ?>" title="<?php echo e(setting()->comp_name); ?>">
+</a> 
+</div>
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>   
+
+</div>
+<?php endif; ?>
+
+
+<section class="bg-light py-2">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-lg-3">
+<div class="media align-items-top">
+<img src="assets/img/deliverry.png" alt="delivery">
+<div class="media-body ml-4">
+<h4 class="h6">Delivery All Over India</h4>
+<p class="mbb">On Time Safe Delivery</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3">
+<div class="media align-items-top">
+<img src="assets/img/return.png" alt="return">
+<div class="media-body ml-4">
+<h4 class="h6">24 Hours Return</h4>
+<p class="mbb">Wrong Product Free Return</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3">
+<div class="media align-items-top">
+<img src="assets/img/quality.png" alt="quality">
+<div class="media-body ml-4">
+<h4 class="h6">Quality Guarantee</h4>
+<p class="mbb">Product Checked by Expert team</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3">
+<div class="media align-items-top">
+<img src="assets/img/support.png" alt="">
+<div class="media-body ml-4">
+<h4 class="h6">Support 24/7</h4>
+<p class="mbb">Direct Service Support by Experts</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<style>
+.bg-light {
+padding-bottom: 20px !important;
+padding-top: 20px !important;
+background: #e8eff994 !important;
+margin-top: 10px;
+}
+.media.align-items-top {
+display: flex;
+align-items: start;
+}
+.media.align-items-top img {
+max-width: 100px;
+margin-top: -30px;
+}
+.ml-4, .mx-4 {
+margin-left: 15px !important;
+}
+.h6 {
+font-size: 15px;
+}
+.mbb{
+font-size: 12px;
+line-height: 10px;}
+</style><?php /**PATH /home/u336648322/domains/papayawhip-crane-482714.hostingersite.com/public_html/core/resources/views/index-slide.blade.php ENDPATH**/ ?>
