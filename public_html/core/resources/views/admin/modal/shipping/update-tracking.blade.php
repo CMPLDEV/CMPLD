@@ -1,0 +1,32 @@
+<div class="modal-header bg-light p-3">
+<h5 class="modal-title" id="exampleModalLabel">Update Tracking No</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+</div>
+<form method="post" action="{{route('order.shipment.update')}}">
+@csrf
+@method('PUT')
+
+<input type="hidden" name="order_id" value="{{$order->id}}" />
+
+<div class="modal-body">
+
+<div class="row">
+    
+<div class="col-lg-12 mb-4">
+ <input type="text" id="tracking_no" name="tracking_no" class="form-control" value="{{ $order->tracking_no }}" placeholder="Tracking No">
+</div>
+
+<div class="col-lg-12">
+ <textarea type="url" id="tracking_link" name="tracking_link" class="form-control" placeholder="Tracking Link">{{ $order->tracking_link }}</textarea>
+</div>
+
+</div>
+
+
+<div class="modal-footer mt-2">
+<div class="hstack gap-2 justify-content-end">
+<button type="submit" class="btn btn-success user-submit btn-sm" id="edit-btn">Update</button>
+</div>
+</div>
+</div>
+</form>
